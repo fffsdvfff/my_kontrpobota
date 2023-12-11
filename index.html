@@ -5,83 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <style type="text/css">
-        header {
-    background-color: #f0f0f0;
-    padding: 10px;
-    font-family: 'Montserrat Subrayada',sans-serif;
-}
-h4{
-    border: 1px; 
-}
-header h1, header h2, header h3 {
-    color: #333;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.block {
+        
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            font-family: 'Rubik Bubbles', sans-serif;
+        }
+
+        h4 {
+            border: 1px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header h1, header h2, header h3 {
+            color: #333;
+        }
+
+        .block {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    width: 100%;
-    
-}
-#block1 {
-    background-color: purple;
 }
 
-#block2 {
-    background-color: #add8e6;
+        #block1 {
+            background-color: purple; 
+            color: white;
+        }
+
+        #block2 {
+            background-color: rgb(18, 110, 133);
+            color: white;
+        }
+
+        #block3 {
+            background-color: orange;
+        }
+
+        #block4 {
+            background-color: red;
+        }
+
+        #block1 h4, #block2 h4, #block3 h4, #block4 h4 {
+            width: 200px ;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            color: #fff;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #block1 h4 {
+            background-color: rgb(117, 177, 27);
+            color: black;
+        }
+
+        #block2 h4 {
+            background-color: rgb(226, 51, 153);
+            color: black;
+        }
+
+        #block3 h4 {
+            background-color: rgb(214, 245, 40);
+        }
+
+        #block4 h4 {
+            background-color: lime;
+        }
+
+        #block1, #block2, #block3, #block4 {
+            width: 100%;
+        }
+
+        @media (min-width: 769px) {
+    #block1, #block2 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    #block3, #block4 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
 }
 
-#block3 {
-    background-color: #98fb98; 
+@media (min-width: 993px) {
+    #block1, #block2 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    #block3, #block4 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
 }
 
-#block4 {
-    background-color: #ffd700; 
+@media (min-width: 1201px) {
+    #block1, #block2, #block3 {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    #block4 {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+    }
 }
 
-header h4, .block p {
-    color: #fff;
-}
-#block1 h4, #block2 h4, #block3 h4, #block4 h4 {
-    width: 150px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #333; /* Контрастний фон для заголовків блоків */
-    border-radius: 5px;
-    color: #fff; /* Білий текст для контрасту */
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-#block1 h4{
-    background-color: yellow;
-    color: black;
-}
-#block2 h4{
-    background-color: rgb(52, 146, 14);
-    color: black;
- }
- #block3 h4{
-    background-color: rgb(145, 86, 73);
-    color: black;
- }
- #block4 h4{
-    background-color: rgb(26, 104, 104);
-    color: black;
- }
-
-#block1, #block2, #block3, #block4 {
-    width: 100%;
-}
-#pos { 
-    color: black;
-}
-.container {
-    display: flex;
+@media (min-width: 1200px) {
+    #block1, #block2, #block3, #block4 {
+        width: 23.5%;
+        float: left;
+        margin-right: 2%;
+    }
 }
 
     </style>
