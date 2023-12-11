@@ -47,6 +47,9 @@
     border-radius: 10px;
     position: relative;
     flex: 1;
+    box-sizing: border-box;
+    border: 1px solid#000;
+
 }
 
         #block1 {
@@ -105,11 +108,30 @@
         .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
-    @media  screen and (min-width: 769px) and (max-width:992) {
-    #block1, #block2 {
+    @media  screen and (min-width: 768px) {
+    #block1 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        flex-basis: 48%;
+    }
+    #block2 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        flex-basis: 48%;
+    }
+    #block3 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        flex-basis: 48%;
+    }
+    #block4 {
         width: 48%;
         float: left;
         margin-right: 2%;
@@ -117,25 +139,45 @@
     }
 }
 
-@media screen and  (min-width: 993px)  and (max-width: 1200px)   {
+@media screen and  (min-width: 769px)  and (max-width: 992px)   {
 
-    #block1, #block2, #block3 {
+    #block1, #block2 {
         width: 48%;
         float: left;
         margin-right: 2%;
         flex-basis: 31.33%;
     }
-    #block4 {
+    #block4, #block3  {
         width: 48%;
         float: left;
         margin-right: 2%;
         flex-basis: 65.33%;
     }
 }
+@media screen and  (min-width: 993px)  and (max-width: 1200px)   {
 
+    #block1, #block2, #block3  {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        flex-basis: 30%;
+    }
+    #block4  {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        flex-basis: 90%;
+    }
+
+
+
+}
 @media screen and (min-width: 1201px) {
     #block1, #block2, #block3,  #block4 {
-        flex-basis: 23.5%;
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        flex-basis: 48%;
     }
 }
 
